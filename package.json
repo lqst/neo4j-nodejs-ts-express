@@ -5,7 +5,8 @@
   "license": "MIT",
   "scripts": {
     "build": "tsc",
-    "start:dev": "nodemon --watch src/**/*.ts --exec ts-node ./src/server.ts",
+    "start:dev": "nodemon --exec ts-node ./src/server.ts",
+    "start:dev_old": "nodemon --watch src/**/*.ts --exec ts-node ./src/server.ts",
     "start:prod": "node ./dist/server.js"
   },
   "dependencies": {
@@ -18,5 +19,6 @@
     "nodemon": "2.0.15",
     "ts-node": "^10.9.1",
     "typescript": "^5.0.4"
-  }
+  },
+  "packageManager": "yarn@3.5.0"
 }
